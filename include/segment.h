@@ -1,3 +1,5 @@
+#ifndef __SEGMENT_H__
+#define __SEGMENT_H__
 typedef unsigned int uint32_t;
 
 typedef struct{
@@ -25,3 +27,4 @@ typedef struct{
 	header head;
 	char data[1000];
 } segment;
+#endif

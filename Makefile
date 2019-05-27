@@ -3,7 +3,7 @@ CFLAGS := -I./include
 all: sender receiver
 
 sender: ./src/sender.c
-	gcc $(CFLAGS) -o sender ./src/sender.c ./src/pld.c
+	gcc $(CFLAGS) -o sender ./src/sender.c ./src/pld.c ./src/debug.c ./src/socketSend.c
 
 receiver: ./src/receiver.c
 	gcc -I./include -o receiver ./src/receiver.c 
